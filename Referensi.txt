@@ -1,0 +1,30 @@
++ Tutorial 
+	- https://apexapps.oracle.com/pls/apex/f?p=44785:24:114014016339587:::24:P24_CONTENT_ID,P24_PREV_PAGE:12304,24
+
++ instalasi
+	1. https://oracle-base.com/articles/12c/oracle-db-12cr2-installation-on-oracle-linux-6-and-7
+	2. https://oracle-base.com/articles/12c/weblogic-installation-on-oracle-linux-6-and-7-1221
+	3. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-create-new-domain
+
++ instalasi form builder standalone
+	- https://oracle-base.com/articles/12c/standalone-forms-builder-12c-installation-on-windows-1221
+	
++ Arsitektur
+	- https://docs.oracle.com/cd/E27559_01/doc.1112/e28391/classic.htm#ASHIA4334
+	
++ Basic deployment Form
+	- https://docs.oracle.com/cd/E28280_01/web.1111/e10240/basics.htm#FSDEP137
+
++ Configuring OHS (oracle http server)
+	- https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/wls/12c/12_2_1/004-13-001-ohsCP/ohsCP.html
+
++ Form & Report Notes
+	1. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-configuration-notes
+
++ Reset password Adminserver
+	- https://oracle-base.com/articles/11g/reset-the-adminserver-password-in-weblogic-11g-and-12c
+
++ Launc JNLP Weblogic
+	- java -jar frmsal.jar -url "http://10.25.100.9:9001/forms/frmservlet?config=standaloneapp" -t 10000
+
+	* manual : http://10.25.100.9:9001/forms/html/fsal.htm 	

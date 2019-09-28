@@ -1,0 +1,75 @@
++ Server Devel
+	- 10.5.100.9
+	- user : root
+	- pass : develsvr@-
+
++ Semua konfigurasi local varibel ada di 
+	- /home/oracle/.bash_profile
+
+	*jika sudah diedit, ketikan [titik] [.bash_profile] [enter] seperti >> . .bash_profile, untuk me-reload.
+	
++ Menjalankan service weblogic
+	+ Path startWebLogic.sh
+		- *server devel
+		- /u01/app/oracle/config/domains/[nama_domain -  devdomains]/
+	
+	+ Path service lainnya
+		- *server devel
+		- /u01/app/oracle/config/domains/devdomain/bin/		
+
+
+	- sh $DOMAIN_HOME/startWebLogic.sh 
+	
+	*pastikan dijalankan pakai user 'oracle' dan database (di host lain) menyala
+	*kemudian buka domain di browser http://localhost:7001/
+
++ Menjalankan Node Manager, yg merupakan utility terpisah dari weblogic server untuk mengatur server, misalnya
+	agar form, report, dan ohs (oracle http server) bisa running
+	
+	- sh $DOMAIN_HOME/bin/nodeManager.sh 
+
++ Menjalankan Service Form di Report di Dashboard
+	+ Form
+		- 
+	+ Report
+
++ Jika ada perubahan password pada salah satu schema, misalnya schema DEV_OPSS expired, maka
+	- Ubah password di sqlplus
+	- jalankan script berikut di wlst.sh (path >> /u01/app/oracle/product/12.2.1/oracle_common/common/bin) :
+		> modifyBootStrapCredential(jpsConfigFile='/u01/app/oracle/config/domains/devdomain/config/fmwconfig/jps-config.xml',username='DEV_OPSS',password='getpass')
+
+	*tutorial lengkapnya >> https://linecode-notes.com/2017/09/08/unable-to-start-the-admin-server-in-forms-12c-due-to-ora-28001/
+	
+	
++ Setting form
+	- $DOMAIN_HOME/config/fmwconfig/servers/WLS_FORMS/applications/formsapp_12.2.1/config/formsweb.cfg
+	
+
++ Path file rwservlet.properties
+	- /u01/app/oracle/config/domains/devdomain/config/fmwconfig/servers/WLS_REPORTS/applications/reports_12.2.1/configuration
+
++ Path file converter.properties
+	- /u01/app/oracle/product/12.2.1/forms/templates/config
+	- /u01/app/oracle/config/domains/devdomain/config/fmwconfig/components/FORMS/instances/forms1 (valid)
+
++ Path file frmplsqlconv.sh (porting form)
+	- /u01/app/oracle/product/12.2.1/forms/templates/scripts
+	
+	*cara eksekusi
+	> ./frmplsqlconv.sh mode=wizard
+
+	Catatan: Pastikan semua form & menu yang akan diporting dimiliki user oracle
+
++ Path file frmcmp.sh (compile form)
+	- /u01/app/oracle/config/domains/devdomain/config/fmwconfig/components/FORMS/instances/forms1/bin, atau
+	- $FORMS_INSTANCE/bin
+	
+	contoh form :
+	
+	./frmcmp.sh module=/u01/app/oracle/product/12.2.1/forms/src/F_TRAINING.fmb module_type=form userid=pbb/pbb@sismioppdb
+
+
+	contoh menu :
+	
+	./frmcmp.sh module=/u01/app/oracle/product/12.2.1/forms/src/MENU_TRAINING.mmb module_type=menu userid=pbb/pbb@sismioppdb
+	
