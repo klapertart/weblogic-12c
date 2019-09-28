@@ -1,8 +1,3 @@
-+ Server Devel
-	- 10.5.100.9
-	- user : root
-	- pass : develsvr@-
-
 + Semua konfigurasi local varibel ada di 
 	- /home/oracle/.bash_profile
 
