@@ -1,3 +1,16 @@
++ Urutan menjalankan service
+	- Start Node Manager
+	- Start Weblogic Admin Server
+	- Start WLS_FORM
+	- Buka http://localhost:7001/em (enterprise manager)
+	- Start ohs1
+	- Start WLS_REPORT
+	- Start Report Server
+
++ Urutan menghentikan service
+	- Kebalikan dari urutan menjalankan service (dari akhir sampai awal)
+	
+	
 + Semua konfigurasi local varibel ada di 
 	- /home/oracle/.bash_profile
 
@@ -42,6 +55,8 @@
 
 + Path file rwservlet.properties
 	- /u01/app/oracle/config/domains/devdomain/config/fmwconfig/servers/WLS_REPORTS/applications/reports_12.2.1/configuration
+	
+	*di file ini terdapat nama server report / report server name
 
 + Path file converter.properties
 	- /u01/app/oracle/product/12.2.1/forms/templates/config
