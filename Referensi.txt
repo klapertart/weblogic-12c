@@ -5,6 +5,7 @@
 	1. https://oracle-base.com/articles/12c/oracle-db-12cr2-installation-on-oracle-linux-6-and-7
 	2. https://oracle-base.com/articles/12c/weblogic-installation-on-oracle-linux-6-and-7-1221
 	3. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-create-new-domain
+	4. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-configuration-notes
 
 + instalasi form builder standalone
 	- https://oracle-base.com/articles/12c/standalone-forms-builder-12c-installation-on-windows-1221
@@ -31,3 +32,6 @@
 	- java -jar frmsal.jar -url "http://10.25.100.9:9001/forms/frmservlet?config=standaloneapp" -t 10000
 
 	* manual : http://10.25.100.9:9001/forms/html/fsal.htm 	
+
++ list of weblogic metadata schemas 
+	- https://blogs.oracle.com/fusionmiddlewaresupport/how-to-query-fusion-middleware-metadata-schemas-via-jdbc
