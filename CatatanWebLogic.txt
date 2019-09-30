@@ -5,7 +5,7 @@
 	- Buka http://localhost:7001/em (enterprise manager)
 	- Start ohs1
 	- Start WLS_REPORT
-	- Start Report Server
+	- Start Report Server Instance
 
 + Urutan menghentikan service
 	- Kebalikan dari urutan menjalankan service (dari akhir sampai awal)
@@ -56,7 +56,6 @@
 + Path file rwservlet.properties
 	- /u01/app/oracle/config/domains/devdomain/config/fmwconfig/servers/WLS_REPORTS/applications/reports_12.2.1/configuration
 	
-	*di file ini terdapat nama server report / report server name
 
 + Path file converter.properties
 	- /u01/app/oracle/product/12.2.1/forms/templates/config
@@ -83,3 +82,6 @@
 	
 	./frmcmp.sh module=/u01/app/oracle/product/12.2.1/forms/src/MENU_TRAINING.mmb module_type=menu userid=pbb/pbb@sismioppdb
 	
++ Devel
+	- report server instance = rep_server1
+	- report tools instance = reptools1

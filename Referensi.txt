@@ -8,7 +8,10 @@
 
 + instalasi form builder standalone
 	- https://oracle-base.com/articles/12c/standalone-forms-builder-12c-installation-on-windows-1221
-	
+
++ konfigursi akhir setelah instalasi
+	- https://dirknachbar.blogspot.com/2016/08/oracle-reports-12c-missing.html
+
 + Arsitektur
 	- https://docs.oracle.com/cd/E27559_01/doc.1112/e28391/classic.htm#ASHIA4334
 	
