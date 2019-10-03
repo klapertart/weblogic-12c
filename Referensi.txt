@@ -2,16 +2,18 @@
 	- https://apexapps.oracle.com/pls/apex/f?p=44785:24:114014016339587:::24:P24_CONTENT_ID,P24_PREV_PAGE:12304,24
 
 + instalasi
-	1. https://oracle-base.com/articles/12c/oracle-db-12cr2-installation-on-oracle-linux-6-and-7
-	2. https://oracle-base.com/articles/12c/weblogic-installation-on-oracle-linux-6-and-7-1221
-	3. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-create-new-domain
-	4. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-configuration-notes
+	+ database 12c
+		-  https://oracle-base.com/articles/12c/oracle-db-12cr2-installation-on-oracle-linux-6-and-7
+	+ weblogic (step by step)
+		1. https://oracle-base.com/articles/12c/weblogic-installation-on-oracle-linux-6-and-7-1221
+		2. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-installation-on-oracle-linux-6-and-7
+		3. https://oracle-base.com/articles/12c/weblogic-repository-configuration-utility-1221
+		4. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-create-new-domain		
+		5. https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-configuration-notes
+		6. https://dirknachbar.blogspot.com/2016/08/oracle-reports-12c-missing.html
 
 + instalasi form builder standalone
 	- https://oracle-base.com/articles/12c/standalone-forms-builder-12c-installation-on-windows-1221
-
-+ konfigursi akhir setelah instalasi
-	- https://dirknachbar.blogspot.com/2016/08/oracle-reports-12c-missing.html
 
 + Arsitektur
 	- https://docs.oracle.com/cd/E27559_01/doc.1112/e28391/classic.htm#ASHIA4334
