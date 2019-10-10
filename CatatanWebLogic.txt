@@ -85,3 +85,8 @@
 + Devel
 	- report server instance = rep_server1
 	- report tools instance = reptools1
+	
+	
++ Solusi
+	- https://pitss.com/us/2014/07/02/unable-to-start-weblogic-admin-server/
+	
