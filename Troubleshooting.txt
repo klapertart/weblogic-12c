@@ -1,0 +1,20 @@
+#1 : DB akses error
+
+Tahapannya:
+a. Cek user2 utk kebutuhan weblogic di oracle, statusnya expired atau tidak, dengan masuk ke sqlplus dan mengetikan :
+
+SELECT username, account_status, authentication_type
+FROM dba_users
+WHERE username LIKE ‘DEV_%’;
+
+b. Jika ada user dengan status expired, maka update passwordnya.
+c. Update perubahan credential user tadi di weblogic, dengan tahapan :
+   1). Masuk ke path /u01/app/oracle/product/12.2.1/oracle_common/common/bin/ melalui terminal/shell.
+   2). Masuk ke weblogic scripting tools, dengan mengetikan >> ./wlst.sh [enter]
+   3). Setelah muncul tulisan "wls:/offline>" maka ketikan script berikut : modifyBootStrapCredential(jpsConfigFile='/u01/app/oracle/config/domains/proddomain/config/fmwconfig/jps-config.xml',username='[user]',password='[pass]') [enter]
+   
+   *ulangi langkah 3). sebanyak user yang expired. Dengan catatan password user tersebut sudah diupdate di sqlplus.
+   
+   4). setelah beres, keluar dari wls, dengan mengetikan >> exit() [enter]
+   
+d. Setelah berus update credential, jalankan service weblogic.
